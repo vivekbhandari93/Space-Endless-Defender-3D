@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 
 public class MusicPlayer : MonoBehaviour
@@ -14,11 +12,5 @@ public class MusicPlayer : MonoBehaviour
     void Start()
     {
         GetComponent<AudioSource>().Play();
-        Invoke("LoadFirstScene", 2f);        
-    }
-
-    private void LoadFirstScene()
-    {
-        SceneManager.LoadScene(1);
     }
 }
