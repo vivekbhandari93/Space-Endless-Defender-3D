@@ -17,7 +17,9 @@ public class PlayerController : MonoBehaviour
     [Header("Control Throw Base")]
     [SerializeField] float controlThrowPitchFactor = -30f;
     [SerializeField] float controlThrowRollFactor = -20f;
-    
+
+    [Header("Wepons")]
+    [SerializeField] GameObject[] guns;
 
     float xThrow, yThrow;
 
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            Fire();
         }
     }
 
@@ -62,5 +65,23 @@ public class PlayerController : MonoBehaviour
         float roll = xThrow * controlThrowRollFactor;
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    private void Fire()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire1"))
+        {
+            foreach(GameObject gun in guns)
+            {
+                gun.SetActive(true);
+            }
+        }
+        else
+        {
+            foreach(GameObject gun in guns)
+            {
+                gun.SetActive(false);
+            }
+        }
     }
 }

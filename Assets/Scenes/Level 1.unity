@@ -860,6 +860,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
+    - target: {fileID: 767506405, guid: a36655b012357b744b0945239bccffa8, type: 3}
+      propertyPath: m_Name
+      value: Gun Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069323570, guid: a36655b012357b744b0945239bccffa8, type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069323570, guid: a36655b012357b744b0945239bccffa8, type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 890246833755620962}
+    - target: {fileID: 1069323570, guid: a36655b012357b744b0945239bccffa8, type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 890246833755620961}
+    - target: {fileID: 1319087209, guid: a36655b012357b744b0945239bccffa8, type: 3}
+      propertyPath: m_Name
+      value: Gun Left
+      objectReference: {fileID: 0}
     - target: {fileID: 4505584755693742994, guid: a36655b012357b744b0945239bccffa8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -922,6 +942,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a36655b012357b744b0945239bccffa8, type: 3}
+--- !u!1 &890246833755620961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1319087209, guid: a36655b012357b744b0945239bccffa8,
+    type: 3}
+  m_PrefabInstance: {fileID: 890246833755620960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &890246833755620962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 767506405, guid: a36655b012357b744b0945239bccffa8,
+    type: 3}
+  m_PrefabInstance: {fileID: 890246833755620960}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1092673803792429315
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,6 +6,6 @@ public class SelfDestroy : MonoBehaviour
 {
     private void Start()
     {
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 5f);
     }
 }
