@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 767506408}
   - component: {fileID: 767506407}
   m_Layer: 0
-  m_Name: Bullets Right
+  m_Name: Gun Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4766,7 +4766,7 @@ GameObject:
   - component: {fileID: 1319087212}
   - component: {fileID: 1319087211}
   m_Layer: 0
-  m_Name: Bullets Left
+  m_Name: Gun Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9523,6 +9523,7 @@ GameObject:
   - component: {fileID: 890246833755620963}
   - component: {fileID: 890246833755620962}
   - component: {fileID: 1767058838190777124}
+  - component: {fileID: 6788084282764169113}
   m_Layer: 0
   m_Name: PLayer
   m_TagString: Untagged
@@ -9610,9 +9611,12 @@ MonoBehaviour:
   rangeX: 7
   rangeY: 5
   positionPitchFactor: -4
-  positionYawFactor: 2.5
+  positionYawFactor: 4.5
   controlThrowPitchFactor: -30
   controlThrowRollFactor: -20
+  guns:
+  - {fileID: 767506405}
+  - {fileID: 1319087209}
 --- !u!65 &890246833755620963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9654,8 +9658,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348f989aedd41974fbea0c55d5bea05c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelLoadDelay: 5
+  timeDelay: 2
   deathVFX: {fileID: 890246833881273445}
+--- !u!114 &6788084282764169113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4506613433228241636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c9aaeedbd306a4dbd4fb989e1eb000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
 --- !u!1001 &7034893612202914100
 PrefabInstance:
   m_ObjectHideFlags: 0

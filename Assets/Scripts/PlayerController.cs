@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
             {
                 gun.SetActive(true);
             }
+
         }
         else
         {

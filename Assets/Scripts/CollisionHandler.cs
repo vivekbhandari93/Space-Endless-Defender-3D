@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
-    [Tooltip("time delay in seconds")][SerializeField] float levelLoadDelay = 1f;
+    [Tooltip("time delay in seconds")][SerializeField] float timeDelay = 2f;
     [Tooltip("Prefab VFX on player")][SerializeField] GameObject deathVFX;
 
     private void OnTriggerEnter(Collider other)
     {
         StartDeathSquence();
         deathVFX.SetActive(true);
-        Invoke("ReloadScene", levelLoadDelay);
+        Invoke("ReloadScene", timeDelay);
     }
 
     private void StartDeathSquence()
